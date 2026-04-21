@@ -1,11 +1,2 @@
-ackermann_vehicle_noetic.launch 파일 수정
-
-<node name="controller_spawner" pkg="controller_manager" type="spawner"
-      args="$(find ackermann_vehicle_gazebo)/config/em_3905_joint_ctrlr_params.yaml"/> 
-
----------------------------(수정)------------------------------------------------------------
-
-<rosparam file="$(find ackermann_vehicle_gazebo)/config/em_3905_joint_ctrlr_params.yaml" command="load"/>
-
-<node name="controller_spawner" pkg="controller_manager" type="spawner"
-      args="joint_state_ctrlr left_steering_ctrlr right_steering_ctrlr left_front_axle_ctrlr right_front_axle_ctrlr left_rear_axle_ctrlr right_rear_axle_ctrlr left_front_shock_ctrlr right_front_shock_ctrlr left_rear_shock_ctrlr right_rear_shock_ctrlr"/>
+sudo apt-get install ros-noetic-effort-controllers
+sudo apt-get install ros-noetic-ros-controllers
