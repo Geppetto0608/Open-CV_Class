@@ -1,4 +1,7 @@
 차량 controll 안될때
 
 rosparam load ~/catkin_ws/src/ackermann_vehicle/ackermann_vehicle_gazebo/config/em_3905_joint_ctrlr_params.yaml
+
+
+
 rosrun controller_manager spawner joint_state_ctrlr left_steering_ctrlr right_steering_ctrlr left_front_axle_ctrlr right_front_axle_ctrlr left_rear_axle_ctrlr right_rear_axle_ctrlr left_front_shock_ctrlr right_front_shock_ctrlr left_rear_shock_ctrlr right_rear_shock_ctrlr
